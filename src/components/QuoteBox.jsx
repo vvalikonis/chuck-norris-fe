@@ -26,7 +26,7 @@ export function QuoteBox () {
           id="text"
           style={{ color: state.color }}
         >
-          <i className="fa fa-quote-left" />  {!isLoading && quote.content }
+          <i className="fa fa-quote-left" />  {!isLoading && quote.fact }
         </blockquote>
       </div>
       <span
@@ -34,7 +34,7 @@ export function QuoteBox () {
         id="author"
         style={{ color: state.color }}
       >
-        - {!isLoading && quote.author }
+        - {!isLoading && 'Chuck Norris' }
       </span>
       <div className="d-flex justify-content-between">
         <TweetQuoteButton quote={!isLoading && quote} />
